@@ -23,7 +23,7 @@ const generateNewBoard = function (boardSize){
   for(let row=0;row<boardSize;row++){
     board[row] = [];
     for(let column=0;column<boardSize;column++){
-      board[row][column] = " - ";
+      board[row][column] = " . ";
     }
   }
   return board;
@@ -37,7 +37,7 @@ const generateBoard = function (board){
     for(let column=0; column<boardSize; column++){
       let element = board[row][column];
       if(element == 1){
-        element = " - ";
+        element = " . ";
       }
       output += element;
     }
